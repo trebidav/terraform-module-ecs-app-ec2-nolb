@@ -123,3 +123,11 @@ variable "container_healthcheck_interval" {
 variable "container_healthcheck_timeout" {
   default = 5
 }
+
+variable "placement_constraint_type" {
+  default = "memberOf"
+}
+
+variable "placement_constraint_expression" {
+  default = "agentConnected==true"
+}
