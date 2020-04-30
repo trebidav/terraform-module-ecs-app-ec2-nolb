@@ -48,6 +48,11 @@ variable "memory" {
   default     = 1024
 }
 
+variable "memory_hard" {
+  description = "MEM hard limit for the task"
+  default     = 2048
+}
+
 variable "cluster_name" {
   description = "ecs cluster name where the services will be registered"
 }
