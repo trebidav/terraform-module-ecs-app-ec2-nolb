@@ -7,7 +7,7 @@ module "container_definition" {
 
   container_cpu                = "${var.cpu}"
   container_memory_reservation = "${var.memory}"
-  container_memory             = ""
+  container_memory             = "${var.memory_hard}"
 
   port_mappings = [
     {
