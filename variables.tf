@@ -48,9 +48,14 @@ variable "memory" {
   default     = 1024
 }
 
-variable "memory_hard" {
-  description = "MEM hard limit for the task"
+variable "cpu_limit" {
+  description = "CPU limit for the task"
   default     = 2048
+}
+
+variable "memory_limit" {
+  description = "MEM limit for the task"
+  default     = 4096
 }
 
 variable "cluster_name" {
